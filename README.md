@@ -30,6 +30,7 @@ git config --global user.email “momo@163.com”
 创建分支,-b并切换到分支上 | git checkout mark | git checkout -b mark|
 -d删除分支(-D强制删除分支)|git branch -d fix |git branch -D aa_fix|
 | .添加所有到暂存区,也可单独添加文件 | git add . | git add index.html |
+拉取代码pull|git pull origin master|
 | 提交并备注提交说明 | git commit -m "test测试代码" |
 提交代码到远程, -u 远程没有mark分支 |git push origin mark |  git push -u origin mark|
 
