@@ -5,7 +5,7 @@
 ``` 
 输入ssh-keygen 然后一直回车输入y即可
 ```
-![Image text](https://gitee.com/montysingh9527/testall/raw/master/img/1.png)
+![Image text](https://github.com/montysingh9527/textall/blob/main/img/1.png)
 #### 3、查看生成 key
 ```
 输入：cat ~/.ssh/id_rsa.pub
