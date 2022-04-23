@@ -5,6 +5,7 @@
 ``` 
 输入ssh-keygen 然后一直回车输入y即可
 ```
+![Image text](https://gitee.com/montysingh9527/testall/raw/master/img/1.png)
 #### 3、查看生成 key
 ```
 输入：cat ~/.ssh/id_rsa.pub
@@ -49,23 +50,21 @@ git config --global user.email “momo@163.com”
 | :--------  | :--------  | :-------|
 把暂存和非暂存的修改都保存起来,save添加备注 | git stash | git stash save "test-stash"|
 恢复暂存,恢复指定的进度到工作区|git stash pop |git stash pop 3|
-.添加所有到暂存区,也可单独添加文件 | git add . | git add index.html |
 查看现有暂存stash|git stash list|
 删除所有缓存stash| git stash clear
 
 #### 10、版本回退
+```
+撤销拉取操作：分为两步获取版本号、还原到对应版本号
+查看拉取日志获得版本号：git reflog 
+还原到版本号：  git reset --hard d79ab8f 
+强制推送：git push -f origin master
+
 某一个commit错误, 彻底删除commit 回退版本(注意如果后面还有提交,也会一起回退) 
 git reset --soft HEAD^    撤销上一次commit,但不撤销add 
 git reset --hard HEAD^   撤销上一次commit 并撤销add 
 git push --force   强行push
-强制推送：git push -f origin master
-
-==============代码回滚=============================== 
-撤销拉取操作：  分为两步   
-查看拉取日志获得版本号  git reflog 
-还原到版本号：  git reset --hard d79ab8f 
-还原操作：  git fetch --all && git reset --hard origin/master
-
+```
 
 #### 9、远程有仓库本地没有怎么办？
 ```
