@@ -34,6 +34,26 @@ git config --global user.email “momo@163.com”
 | 提交并备注提交说明 | git commit -m "test测试代码" |
 提交代码到远程, -u 远程没有mark分支 |git push origin mark |  git push -u origin mark|
 
+#### 8、合并代码到master
+```
+合并dev分支到master 
+切换到master：git checkout master 
+合并dev：git merge dev 
+(git add) (git commit)  
+合并到master：git push origin master  
+```
+#### 9、stash缓存
+> 说明：暂时保存当前更改,分支临时切换
+| 说明       | 操作命令   | 示例 |
+| :--------  | :--------  | :-------|
+把暂存和非暂存的修改都保存起来,save添加备注 | git stash | git stash save "test-stash"|
+恢复暂存,恢复指定的进度到工作区|git stash pop |git stash pop 3|
+.添加所有到暂存区,也可单独添加文件 | git add . | git add index.html |
+查看现有暂存stash|git stash list|
+删除所有缓存stash| git stash clear
+
+#### 10、版本回退
+
 
 
 #### 9、远程有仓库本地没有怎么办？
