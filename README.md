@@ -8,7 +8,7 @@
 #### 3、查看生成 key
 ```
 输入：cat ~/.ssh/id_rsa.pub
-或者：C:\Users\akei\.ssh
+或者在本机地址：C:\Users\akei\.ssh
 ```
 #### 4、将.ssh/id_rsa.pub生成的key添加到远程仓库中
 #### 5、设置基本信息
@@ -25,10 +25,11 @@ git config --global user.email “momo@163.com”
 关联远程仓库：git remote add origin https://gitee.com/usersname/1345345
 ```
 #### 7、git基本使用
-| 说明       | 操作命令   | 
-| :--------  | :-----  | 
-| 文件添加到git暂存区 | git add .
-| 提交并备注提交说明 | git commit -m "test测试代码" 
+| 说明       | 操作命令   | 示例 |
+| :--------  | :--------  | :-------|
+| .添加所有到暂存区,加上文件名也可以单独添加 | git add . | git add index.html |
+| 提交并备注提交说明 | git commit -m "test测试代码" |  
+
 
 
 ```
