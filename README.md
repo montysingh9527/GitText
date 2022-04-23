@@ -27,35 +27,12 @@ git config --global user.email “momo@163.com”
 #### 7、git基本使用
 | 说明       | 操作命令   | 示例 |
 | :--------  | :--------  | :-------|
-| .添加所有到暂存区,加上文件名也可以单独添加 | git add . | git add index.html |
-| 提交并备注提交说明 | git commit -m "test测试代码" |  
+创建分支,-b并切换到分支上 | git checkout mark | git checkout -b mark|
+-d删除分支(-D强制删除分支)|git branch -d fix |git branch -D aa_fix|
+| .添加所有到暂存区,也可单独添加文件 | git add . | git add index.html |
+| 提交并备注提交说明 | git commit -m "test测试代码" |
+提交代码到远程, -u 远程没有mark分支 |git push origin mark |  git push -u origin mark|
 
-
-
-```
-git add .                    # 将当前目录所有文件添加到git暂存区
-git commit -m "test测试代码" # 提交并备注提交说明
-git push -u origin test     # 将本地提交至test
-2、在切换至master分支
-git checkout master # 切换分支至master
-3、注：将远程master最新代码pull下来，避免代码冲突
-git pull origin master
-4、将“test”分支的代码合并到master上
-git merge test
-5、然后查看状态
-git status # 命令查看哪些文件处于什么状态
-6、再将代码push到远程master上
-git push origin master
-```
-
-#### 8、创建新分支 
-```
-git branch -d xiaoguo_fix   # -d分支被合并后才允许删除xiaoguo_fix分支(-D强制删除分支) 
-git checkout -b xiaoguo_fix  # 先创建一个新分支xiaoguo_fix , 并切换到那个分支上 
-git add .             .添加所有到暂存区,加上文件名也可以单独添加
-git commit -m "xxxxx"  提交 
-git push -u origin xiaoguo_fix    (本地有xiaoguo_fix 分支  远程没有xiaoguo_fix ) 
-```
 
 
 #### 9、远程有仓库本地没有怎么办？
