@@ -44,6 +44,7 @@ git config --global user.email “momo@163.com”
 ```
 #### 9、stash缓存
 > 说明：暂时保存当前更改,分支临时切换
+
 | 说明       | 操作命令   | 示例 |
 | :--------  | :--------  | :-------|
 把暂存和非暂存的修改都保存起来,save添加备注 | git stash | git stash save "test-stash"|
@@ -53,7 +54,17 @@ git config --global user.email “momo@163.com”
 删除所有缓存stash| git stash clear
 
 #### 10、版本回退
+某一个commit错误, 彻底删除commit 回退版本(注意如果后面还有提交,也会一起回退) 
+git reset --soft HEAD^    撤销上一次commit,但不撤销add 
+git reset --hard HEAD^   撤销上一次commit 并撤销add 
+git push --force   强行push
+强制推送：git push -f origin master
 
+==============代码回滚=============================== 
+撤销拉取操作：  分为两步   
+查看拉取日志获得版本号  git reflog 
+还原到版本号：  git reset --hard d79ab8f 
+还原操作：  git fetch --all && git reset --hard origin/master
 
 
 #### 9、远程有仓库本地没有怎么办？
