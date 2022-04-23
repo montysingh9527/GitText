@@ -1,7 +1,5 @@
 #### 1、安装
-``` 
-**Git官网下载：** https://git-scm.com/downloads
-```
+>**Git官网下载：** https://git-scm.com/downloads
 
 #### 2、获取SSHKey：
 ``` 
